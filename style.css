@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #062031;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 200px;
+    border: 15px solid #062031;
+    border-radius: 12%;
+    animation: box 4s linear infinite;
+    animation-delay: 1s;
+    box-shadow: 20PX 20px 200px 00px rgb(0, 0, 0), inset 0px 0px 70px 0px rgb(0, 0, 0);
+}
+
+@keyframes box {
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+.ball {
+    width: 120px;
+    height: 120px;
+    box-shadow: -3px 5px 20px 0px rgb(0 0 0), inset -4px -5px 20px 6px rgb(0 0 0);
+    border-radius: 50%;
+    animation: ball 4s linear infinite;
+}
+
+@keyframes ball {
+    0% {
+        margin: 30% 0%;
+    }
+
+    25% {
+        margin: 77% 46%;
+    }
+
+    50% {
+        margin: 46% 77%;
+    }
+
+    75% {
+        margin: 0% 30%;
+    }
+
+    100% {
+        margin: 30% 0;
+    }
+}
+.myname{
+    font-family: monospace;
+    color: rgb(0, 255, 191);
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    transition: .5s;
+}
+.myname:hover{
+    color: rgb(0, 255, 242);
+    cursor: pointer;
+    font-size: 32px;
+}
+.myname::before{
+    content: " ";
+    margin-top: 40px;
+    position: absolute;
+    width: 280px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+.social-link{
+    display: flex;
+    justify-content:center;
+}
+.social-link img{
+    margin-top: 10px;
+    transition: all 0.2s ;
+    width: 80px;
+}
+.social-link img:hover{
+    width: 90px;
+    opacity: 0.6;
+}
