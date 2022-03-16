@@ -4,15 +4,15 @@
 }
 
 body {
-    background-color: #062031;
+    background-color: #103a57;
 }
 
 .box {
     width: 500px;
     height: 500px;
     margin: auto;
-    margin-top: 200px;
-    border: 15px solid #062031;
+    margin-top: 140px;
+    border: 15px solid #103a57;
     border-radius: 12%;
     animation: box 4s linear infinite;
     animation-delay: 1s;
@@ -60,24 +60,20 @@ body {
 }
 .myname{
     font-family: monospace;
-    color: rgb(0, 255, 191);
-    font-size: 30px;
+    color: rgb(88, 208, 255);
+    font-size: 38px;
     font-weight: 600;
     display: flex;
     justify-content: center;
     margin-top: 150px;
-    transition: .5s;
+    
 }
-.myname:hover{
-    color: rgb(0, 255, 242);
-    cursor: pointer;
-    font-size: 32px;
-}
+
 .myname::before{
     content: " ";
-    margin-top: 40px;
+    margin-top: 45px;
     position: absolute;
-    width: 280px;
+    width: 300px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.514);
 }
@@ -86,11 +82,11 @@ body {
     justify-content:center;
 }
 .social-link img{
-    margin-top: 10px;
+    margin-top: 6px;
     transition: all 0.2s ;
     width: 80px;
 }
 .social-link img:hover{
     width: 90px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
