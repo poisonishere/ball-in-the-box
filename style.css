@@ -6,7 +6,12 @@
 body {
     background-color: #103a57;
 }
-
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .box {
     width: 500px;
     height: 500px;
@@ -16,7 +21,7 @@ body {
     border-radius: 12%;
     animation: box 4s linear infinite;
     animation-delay: 1s;
-    box-shadow: 20PX 20px 200px 00px rgb(0, 0, 0), inset 0px 0px 70px 0px rgb(0, 0, 0);
+    box-shadow: 0 0 200px 0 rgb(0, 0, 0), inset 0px 0px 70px 0px rgb(0, 0, 0);
 }
 
 @keyframes box {
@@ -73,7 +78,7 @@ body {
     content: " ";
     margin-top: 45px;
     position: absolute;
-    width: 300px;
+    width: 350px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.514);
 }
@@ -89,4 +94,30 @@ body {
 .social-link img:hover{
     width: 90px;
     opacity: 0.7;
+}
+@media screen and (max-width:760px) {
+   .box{
+       margin-top: 100px;
+       border: 6px solid #103a57;
+       width: 240px;
+       height: 240px;
+   }
+   .ball{
+       width: 58px;
+       height: 58px;
+   }
+   .myname{
+       font-size: 30px;
+   }
+   .myname::before{
+       width: 300px;
+       margin-top: 40px;
+   }
+   .social-link img{
+       width: 60px;
+       margin-top: 5px;
+   }
+   .social-link img:hover{
+       width: 70px;
+   }
 }
